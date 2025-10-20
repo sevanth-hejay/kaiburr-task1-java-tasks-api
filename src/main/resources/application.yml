@@ -1,0 +1,8 @@
+server:
+  port: 8080
+
+# We default to in-memory store. If you want Mongo, set MONGO_URI env var and uncomment mongodb lines.
+spring:
+  data:
+    mongodb:
+      uri: ${MONGO_URI:mongodb://localhost:27017/kaiburr}
