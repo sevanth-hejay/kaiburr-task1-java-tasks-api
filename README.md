@@ -9,7 +9,7 @@ A simple **Spring Boot** REST API to manage tasks and run safe shell commands. E
 
 ---
 
-## **Features**
+ **Features**
 
 - Create, view, and delete tasks.
 - Run predefined safe shell commands for a task.
@@ -18,7 +18,7 @@ A simple **Spring Boot** REST API to manage tasks and run safe shell commands. E
 
 ---
 
-## **Task Model**
+ **Task Model**
 
 | Field            | Type   | Description                   |
 |-----------------|--------|-------------------------------|
@@ -39,7 +39,7 @@ A simple **Spring Boot** REST API to manage tasks and run safe shell commands. E
 
 ---
 
-## **Prerequisites**
+ **Prerequisites**
 
 - Java 17  
 - Maven 3.x  
@@ -47,7 +47,7 @@ A simple **Spring Boot** REST API to manage tasks and run safe shell commands. E
 
 ---
 
-## **Running the API**
+ **Running the API**
 
 1. Clone the repository:
 
@@ -70,9 +70,9 @@ http://localhost:8080
 
 ---
 
-## **API Endpoints**
+ **API Endpoints**
 
-### **1. Create a Task**
+**1. Create a Task**
 
 * **URL:** `POST /tasks`
 * **Headers:** `Content-Type: application/json`
@@ -86,7 +86,7 @@ http://localhost:8080
 }
 ```
 
-* **Response:**
+ **Response:**
 
 ```json
 {
@@ -100,7 +100,7 @@ http://localhost:8080
 
 ---
 
-### **2. Run a Command for a Task**
+ **2. Run a Command for a Task**
 
 * **URL:** `POST /tasks/{id}/run?command=<command>`
 
@@ -121,26 +121,25 @@ http://localhost:8080
 
 ---
 
-### **3. Get All Tasks**
+ **3. Get All Tasks**
 
 * **URL:** `GET /tasks`
 * **Response:** List of tasks with all executions.
 
 ---
 
-### **4. Get Single Task**
+ **4. Get Single Task**
 
 * **URL:** `GET /tasks/{id}`
 * **Response:** Task with its executions.
 
 ---
 
-### **5. Delete Task**
+ **5. Delete Task**
 
 * **URL:** `DELETE /tasks/{id}`
 * **Response:** `204 No Content`
 
----
 
  **Notes**
 
@@ -150,11 +149,7 @@ http://localhost:8080
 
 ---
 
-## **License**
 
-This project is open-source and free to use.
-
-```
 
 ---
 
